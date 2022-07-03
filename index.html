@@ -10,10 +10,104 @@
 <body>
 <header>
   <div class="container">
-
+    <nav class="navigation">
+      <img src="css/img/Logo.png" alt="logo">
+      <ul class="menu__list">
+        <li class="menu__item">Каталог
+          <div class="menu__item-popup visibility-hidden">
+            <a class="menu__item-popup__item" href="#">Новинки</a>
+            <a class="menu__item-popup__item" href="#">Сливочное</a>
+            <a class="menu__item-popup__item" href="#">Щербеты</a>
+            <a class="menu__item-popup__item" href="#">Фруктовый лед</a>
+            <a class="menu__item-popup__item" href="#">Мелорин</a>
+          </div>
+        </li>
+        <li class="menu__item">Доставка и оплата</li>
+        <li class="menu__item">О Компании</li>
+      </ul>
+      <ul class="user__menu">
+        <li class="user__item">
+          <button class="user__item-button user__item-button-search">
+            <img class="user__item-icon-search" src="css/icon/lope.svg" alt="lope">
+          </button>
+          <div class="user__item-search visibility-hidden">
+            <label>
+              <input class="user__item-input" type="text" placeholder="Крем-брюле">
+            </label>
+          </div>
+        </li>
+        <li class="user__item">
+          <button class="user__item-button user__item-button-singIn">
+            <img class="user__item-icon-singIp" src="css/icon/entrance.svg" alt="sing in">
+            Вход
+          </button>
+          <form class="user__item-singIn visibility-hidden">
+            <label class="user__item-label">
+              <input class="user__item-input" type="email" placeholder="example@mail.com">
+            </label>
+            <label class="user__item-label">
+              <input class="user__item-input" type="password" placeholder="******">
+            </label>
+            <ul class="user__item-inner-wrapper">
+              <li class="user__item-inner-wrapper_item">
+                <button class="button" type="submit">Войти</button>
+              </li>
+              <li class="user__item-inner-wrapper_item">
+                <a class="user__item-singIn-link" href="#">Забыли пароль?</a>
+                <a class="user__item-singIn-link" href="#">Новая регистрация</a>
+              </li>
+            </ul>
+          </form>
+        </li>
+        <li class="user__item">
+          <button class="user__item-button user__item-button-basket">
+            <img class="user__item-icon-basket" src="css/icon/basket.svg" alt="">
+            Пусто
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <section class="info">
+      <p class="info__time">С 10 до 20, ежедневно</p>
+      <p class="info__tel">8 812 450-25-25</p>
+    </section>
   </div>
 </header>
-<main></main>
+<main>
+  <div class="container">
+    <section class="slider">
+      <img class="visibility-hidden" src="css/img/slide_1.png" alt="ice cream variant №1">
+      <img class="visibility-hidden" src="css/img/slide_2.png" alt="ice cream variant №2">
+      <img class="visibility-hidden" src="css/img/slide_3.png" alt="ice cream variant №3">
+
+      <h2 class="slider__title">Крем-брюле и пломбир<br> с малиновым джемом</h2>
+      <h2 class="slider__title visibility-hidden">Шоколадный пломбир<br> и лимонный сорбет </h2>
+      <h2 class="slider__title visibility-hidden">Пломбир с помадкой<br> и клубничный щербет</h2>
+      <button class="button" type="button"><a class="slider__link" href="https://ya.ru">Давайте оба!</a></button>
+      <section class="dots">
+        <h2 class="visibility-hidden">controls</h2>
+        <span class="dots__item dots__item-active" tabindex="0"></span>
+        <span class="dots__item" tabindex="0"></span>
+        <span class="dots__item" tabindex="0"></span>
+      </section>
+    </section>
+    <section class="content">
+      <h2 class="visibility-hidden">main content</h2>
+      <section class="sale">
+        <h2 class="sale__title">Малинка даром!</h2>
+        <p class="sale__text">При покупке 2 кг любого фруктового мороженого, добавим в ваш за</p>
+        <button class="button pos-right" type="button">Хочу варенье</button>
+      </section>
+      <section class="sale">
+        <h2 class="sale__title">Шоколадки даром!</h2>
+        <p class="sale__text">
+          При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкусней
+        </p>
+        <button class="button pos-right" type="button">Хочу шоколадки</button>
+      </section>
+    </section>
+  </div>
+</main>
 <footer></footer>
 </body>
 </html>
