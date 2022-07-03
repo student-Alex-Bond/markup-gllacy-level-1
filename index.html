@@ -46,7 +46,7 @@
               <input class="user__item-input" type="email" placeholder="example@mail.com">
             </label>
             <label class="user__item-label">
-              <input class="user__item-input" type="password" placeholder="******">
+              <input class="user__item-input" type="password" placeholder="******" autocomplete="on">
             </label>
             <ul class="user__item-inner-wrapper">
               <li class="user__item-inner-wrapper_item">
@@ -68,6 +68,7 @@
       </ul>
     </nav>
     <section class="info">
+      <h2 class="visibility-hidden">work schedule and telephone</h2>
       <p class="info__time">С 10 до 20, ежедневно</p>
       <p class="info__tel">8 812 450-25-25</p>
     </section>
@@ -83,7 +84,7 @@
       <h2 class="slider__title">Крем-брюле и пломбир<br> с малиновым джемом</h2>
       <h2 class="slider__title visibility-hidden">Шоколадный пломбир<br> и лимонный сорбет </h2>
       <h2 class="slider__title visibility-hidden">Пломбир с помадкой<br> и клубничный щербет</h2>
-      <button class="button" type="button"><a class="slider__link" href="https://ya.ru">Давайте оба!</a></button>
+      <a class="button slider__link" href="https://ya.ru">Давайте оба!</a>
       <section class="dots">
         <h2 class="visibility-hidden">controls</h2>
         <span class="dots__item dots__item-active" tabindex="0"></span>
@@ -93,18 +94,97 @@
     </section>
     <section class="content">
       <h2 class="visibility-hidden">main content</h2>
-      <section class="sale">
+      <section class="wrapper sale">
         <h2 class="sale__title">Малинка даром!</h2>
-        <p class="sale__text">При покупке 2 кг любого фруктового мороженого, добавим в ваш за</p>
-        <button class="button pos-right" type="button">Хочу варенье</button>
+        <p class="sale__text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового
+          варенья бесплатно</p>
+        <a class="button pos-right" href="#">Хочу варенье</a>
       </section>
-      <section class="sale">
+      <section class="wrapper sale sale__background-chocolate">
         <h2 class="sale__title">Шоколадки даром!</h2>
         <p class="sale__text">
           При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкусней
         </p>
-        <button class="button pos-right" type="button">Хочу шоколадки</button>
+        <a class="button pos-right" href="#">Хочу шоколадки</a>
       </section>
+      <section class="hits">
+        <h2 class="visibility-hidden">sale hits</h2>
+        <ul class="hits__list">
+          <li class="hits__item">
+            <img class="hits__item-img" src="css/img/hit_1.png" alt="hit 1">
+            <span class="hits__item-price">310<span class="margin-left">/кг</span></span>
+            <h3 class="hits__item-text">Сливочное с апельсиновым<br> джемом и цитрусовой стружкой </h3>
+          </li>
+          <li class="hits__item">
+            <img class="hits__item-img" src="css/img/hit_2.png" alt="hit 2">
+            <span class="hits__item-price">380<span class="margin-left">/кг</span></span>
+            <h3 class="hits__item-text">Сливочно-кофейное с кусочками<br> шоколада</h3>
+          </li>
+          <li class="hits__item">
+            <img class="hits__item-img" src="css/img/hit_3.png" alt="hit 3">
+            <span class="hits__item-price">355<span class="margin-left">/кг</span></span>
+            <h3 class="hits__item-text">Сливочно-клубничное с<br> присыпкой из белого шоколада</h3>
+          </li>
+          <li class="hits__item">
+            <img class="hits__item-img" src="css/img/hit_4.png" alt="hit 4">
+            <span class="hits__item-price">415<span class="margin-left">/кг</span></span>
+            <h3 class="hits__item-text">Сливочное крем-брюле с<br> карамельной подливкой</h3>
+          </li>
+        </ul>
+      </section>
+      <section class="advantage">
+        <h2 class="advantage__title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого
+          собственного<br> производства на развес</h2>
+        <ul class="advantage__list">
+          <li class="advantage__item">
+            <img class="advantage__item-icon" src="css/icon/ice-cream.svg" alt="ice cream">
+            <p class="advantage__item-text">Все наше мороженое изготавливается на собственном производстве, с
+              использованием
+              современного оборудования и проверенных временем технологий.
+            </p>
+          </li>
+          <li class="advantage__item">
+            <img class="advantage__item-icon" src="css/icon/eco.svg" alt="natural ingredients">
+            <p class="advantage__item-text">
+              Для приготовления мороженого используются настоящие сливки и молоко высочайшего
+              качества. Все дополнительные ингредиенты и добавки произведены из натурального,
+              экологически чистого сырья.
+            </p>
+          </li>
+          <li class="advantage__item">
+            <img class="advantage__item-icon" src="css/icon/cow.svg" alt="cow">
+            <p class="advantage__item-text">
+              Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний,
+              с которыми нас связывает долговременное сотрудничество.
+            </p>
+          </li>
+          <li class="advantage__item">
+            <img class="advantage__item-icon" src="css/icon/thermometer.svg" alt="thermometer">
+            <p class="advantage__item-text">
+              Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке,
+              который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <aside class="other">
+        <section class=" wrapper recipe">
+
+        </section>
+        <section class="subscribe">
+          <div class="subscribe__content"><p class="subscribe__text">
+            Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого
+            вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+          </p>
+            <form action="#" class="subscribe__form">
+              <label>
+                <input class="user__item-input" type="email" placeholder="example@mail.ru">
+              </label>
+              <button class="button" type="submit">Отправить</button>
+            </form>
+          </div>
+        </section>
+      </aside>
     </section>
   </div>
 </main>
