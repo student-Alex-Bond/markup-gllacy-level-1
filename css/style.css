@@ -1,0 +1,11 @@
+*, *:hover, *:after {
+    box-sizing: border-box;
+}
+body{
+    background-color:  #849d8f;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 27px;
+}
