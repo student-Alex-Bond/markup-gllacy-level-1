@@ -563,6 +563,13 @@ font-family: "Roboto","Arial", sans-serif ;
 .map__feedback-bold--text:nth-child(6){
     display: inline;
     line-height: 34px;
-
 }
-
+.footer{
+    padding: 20px 0;
+}
+.footer__list{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
