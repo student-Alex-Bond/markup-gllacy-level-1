@@ -4,7 +4,7 @@ const dots = document.querySelector('.dots')
 const title = document.querySelectorAll('.slider__title')
 const openCatalog = document.querySelector('.js-catalog')
 const popup = document.querySelector('.menu__item-popup')
-const user = document.querySelector('.user__item')
+const userButton = document.querySelector('.user__item-button')
 const search = document.querySelector('.user__item-search')
 let bgImageBody = document.body.style
 
@@ -28,15 +28,16 @@ const addActiveClass = (event) => {
 const toggleItemMenu = (element) => {
 	element.classList.toggle('visibility-hidden')
 }
-const viewSearchItem = (event) => {
-	search.classList.remove('visibility-hidden')
+const submitSearchForm = (event) => {
 	if (event.keyCode === 13) {
 		search.classList.add('visibility-hidden')
+		event.target.value = ''
 	}
+
 }
 dots.addEventListener('click', addActiveClass)
 openCatalog.addEventListener('click', () => {
 	toggleItemMenu(popup)
 })
-user.addEventListener('click', viewSearchItem)
-user.addEventListener('keypress', viewSearchItem)
+userButton.addEventListener('click', () => toggleItemMenu(search))
+search.addEventListener('keypress', submitSearchForm)
