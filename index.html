@@ -13,7 +13,7 @@
     <nav class="navigation">
       <img src="css/img/Logo.png" alt="logo">
       <ul class="menu__list">
-        <li class="menu__item">Каталог
+        <li class="menu__item js-catalog">Каталог
           <div class="menu__item-popup visibility-hidden">
             <a class="menu__item-popup__item" href="#">Новинки</a>
             <a class="menu__item-popup__item" href="#">Сливочное</a>
@@ -77,9 +77,9 @@
 <main>
   <div class="container">
     <section class="slider">
-      <img class="visibility-hidden" src="css/img/slide_1.png" alt="ice cream variant №1">
-      <img class="visibility-hidden" src="css/img/slide_2.png" alt="ice cream variant №2">
-      <img class="visibility-hidden" src="css/img/slide_3.png" alt="ice cream variant №3">
+      <img class="bg-img visibility-hidden" src="css/img/slide_1.png" alt="ice cream variant №1">
+      <img class="bg-img visibility-hidden" src="css/img/slide_2.png" alt="ice cream variant №2">
+      <img class="bg-img visibility-hidden" src="css/img/slide_3.png" alt="ice cream variant №3">
 
       <h2 class="slider__title">Крем-брюле и пломбир<br> с малиновым джемом</h2>
       <h2 class="slider__title visibility-hidden">Шоколадный пломбир<br> и лимонный сорбет </h2>
@@ -87,9 +87,9 @@
       <a class="button slider__link" href="https://ya.ru">Давайте оба!</a>
       <section class="dots">
         <h2 class="visibility-hidden">controls</h2>
-        <span class="dots__item dots__item-active" tabindex="0"></span>
-        <span class="dots__item" tabindex="0"></span>
-        <span class="dots__item" tabindex="0"></span>
+        <span class="dots__item dots__item-active" tabindex="0" data-id="0"></span>
+        <span class="dots__item" tabindex="0" data-id="1"></span>
+        <span class="dots__item" tabindex="0" data-id="2"></span>
       </section>
     </section>
     <section class="content">
@@ -237,5 +237,6 @@
     </ul>
   </div>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>
